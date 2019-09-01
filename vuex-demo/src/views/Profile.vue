@@ -3,7 +3,7 @@
     <h1>This is the profile page</h1>
     <p>name: {{name}}</p>
   </div>
-</template>s
+</template>
 
 <script>
 export default {
