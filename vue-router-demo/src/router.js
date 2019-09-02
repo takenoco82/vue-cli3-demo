@@ -43,6 +43,7 @@ const router = new Router({
       name: 'error',
       component: SystemError
     },
+    // [Vue Routerで404 NotFoundを実現する](https://7th-faily.net/vuerouter404)
     {
       path: '*',
       name: '404',
