@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Login from './views/Login.vue'
 import Private from './views/Private.vue'
+import SystemError from './views/Error.vue'
 
 Vue.use(Router)
 
@@ -35,6 +36,11 @@ const router = new Router({
       meta: {
         requiresAuth: true
       }
+    },
+    {
+      path: '/error',
+      name: 'error',
+      component: SystemError
     }
   ]
 });
