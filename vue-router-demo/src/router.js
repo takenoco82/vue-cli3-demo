@@ -4,6 +4,7 @@ import Home from './views/Home.vue'
 import Login from './views/Login.vue'
 import Private from './views/Private.vue'
 import SystemError from './views/Error.vue'
+import NotFound from './views/NotFound.vue'
 
 Vue.use(Router)
 
@@ -41,6 +42,11 @@ const router = new Router({
       path: '/error',
       name: 'error',
       component: SystemError
+    },
+    {
+      path: '*',
+      name: '404',
+      component: NotFound
     }
   ]
 });
